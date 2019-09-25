@@ -271,6 +271,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -390,6 +412,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/电子组/" itemprop="url" rel="index">
+                    <span itemprop="name">电子组</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -432,9 +476,9 @@
 <li><a href="https://wenku.baidu.com/view/e4ebaa1f0a1c59eef8c75fbfc77da26924c59612.html" target="_blank" rel="noopener">贴片的焊接</a>，尝试自己焊一块属于自己的最小系统板。要求：实现功能  贴片要紧贴板子 无毛刺 不虚焊<br>ps:这也是你们以后用的板子哦</li>
 </ul>
 <img src="/2019/08/25/电子组/焊接图2.png">
-
-
-<h4 id="原理讲解：-1"><a href="#原理讲解：-1" class="headerlink" title="原理讲解："></a>原理讲解：</h4><p>  NE555产生方波给CD4017，CD4017计数并在相应的引脚输出对应的高低电平。</p>
+<img src="/2019/08/25/电子组/NE555引脚图.png" title="NE555引脚图">
+<img src="/2019/08/25/电子组/CD4017.png" title="CD4017引脚图">
+<h4 id="原理讲解：-1"><a href="#原理讲解：-1" class="headerlink" title="原理讲解："></a>原理讲解：</h4><p>  NE555产生方波给CD4017，CD4017计数并在相应的引脚输出对应的高低电平。CD4017输出高电平的顺序分别是③、②、④、⑦、⑩、①、⑤、⑥、⑨脚。所以想让灯流起来有序而不是乱亮的话要注意引脚顺序。（详细信息-&gt;<a href="https://www.baidu.com/" target="_blank" rel="noopener">戳我</a>）</p>
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><code>注意事项</code></h2><ul>
 <li><h2 id="焊接过程的安全"><a href="#焊接过程的安全" class="headerlink" title="焊接过程的安全"></a>焊接过程的安全</h2></li>
 <li><h2 id="元器件的正负极"><a href="#元器件的正负极" class="headerlink" title="元器件的正负极"></a>元器件的正负极</h2></li>
@@ -445,11 +489,12 @@
 <li>面对困难时的韧性</li>
 <li>自学能力。学长们会手把手教，但也仅限于前期，后期还是靠自己</li>
 <li>C语言基础(<a href="https://www.bilibili.com/video/av28463118?from=search&seid=17353863378389232911" target="_blank" rel="noopener">学姐教你C语言</a>)</li>
-<li>必备软件 1.stc-isp (<a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">http://www.stcmcu.com/index.htm</a>) 烧程序用 <!-- ![](电子组/stc-isp.png)  -->
-<img src="/2019/08/25/电子组/stc-isp.png"></li>
+<li>必备软件 1.stc-isp (<a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">http://www.stcmcu.com/index.htm</a>) 烧程序用 </li>
 </ul>
+<img src="/2019/08/25/电子组/stc-isp.png">
+
 <p>2.keil：写程序用，这个软件需要破解否则会限制代码长度(pan.baidu.com/s/1HNfBCxmBwPbXlZqyDnmD0A<br> 提取码：cwx8 )</p>
-<h4 id="开始我们的单片机之旅吧"><a href="#开始我们的单片机之旅吧" class="headerlink" title="开始我们的单片机之旅吧"></a>开始我们的单片机之旅吧</h4><p>  第一步新建工程<br>  打开keil没错就是上面那个软件<br>  点击project –&gt; new uvision project<br>  <img src="/2019/08/25/电子组/新建工程步骤1.png"><br>  点击后会弹出保存工程的路径<br>  <img src="/2019/08/25/电子组/新建工程步骤2.png" title="请让你的文件夹有序哦^_^"><br>  选择一个你喜欢的路径和一个你喜欢的名字(不能出现中文)</p>
+<h4 id="2-1开始我们的单片机之旅吧"><a href="#2-1开始我们的单片机之旅吧" class="headerlink" title="2.1开始我们的单片机之旅吧"></a>2.1开始我们的单片机之旅吧</h4><p>  第一步新建工程<br>  打开keil没错就是上面那个软件<br>  点击project –&gt; new uvision project<br>  <img src="/2019/08/25/电子组/新建工程步骤1.png"><br>  点击后会弹出保存工程的路径<br>  <img src="/2019/08/25/电子组/新建工程步骤2.png" title="请让你的文件夹有序哦^_^"><br>  选择一个你喜欢的路径和一个你喜欢的名字(不能出现中文)</p>
 
           
         
@@ -699,7 +744,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
