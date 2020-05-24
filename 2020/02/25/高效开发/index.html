@@ -90,7 +90,7 @@
 <meta property="og:image" content="http://liushanrongyan.top/2020/02/25/高效开发/插件.png">
 <meta property="og:image" content="http://liushanrongyan.top/2020/02/25/高效开发/tool.png">
 <meta property="og:image" content="http://liushanrongyan.top/2020/02/25/高效开发/tool1.png">
-<meta property="og:updated_time" content="2020-02-25T13:22:45.296Z">
+<meta property="og:updated_time" content="2020-05-24T13:32:15.378Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高效开发">
 <meta name="twitter:description" content="本文旨在介绍一些进行更高效率的开发的方法众所周知keil是我们最熟悉的IDE但是它也有一些问题比如：  编译速度慢 让人憋屈的代码补全 容易崩（不知道是不是jlink盗版的原因^_^）  编译速度慢这个问题可能前期体现不出来，但是到了后期代码量逐渐增多时，第一次编译的时间足够你站起身来放松放松。这个问题可以通过keil的多线程部分缓解">
@@ -353,6 +353,7 @@
 <img src="/2020/02/25/高效开发/tool1.png">
 <p>选择软件路径和加上#E，选择确定后会tool选项卡下会多一个你刚刚命名的东东，点击它就会启用VScode，即可使用VScode敲代码了，再将工程文件添加到工作区就是享受舒服的代码补全。当然nope++也是可以这样用的的。</p>
 <h4 id="用VS直接取代keil"><a href="#用VS直接取代keil" class="headerlink" title="用VS直接取代keil"></a>用VS直接取代keil</h4><p>需要配置很多东西，网上都有比较繁琐，不想折腾，详情请百度。<br>值得注意的是，VS配置的环境和keil不一样，所以会出现同一个代码VS上可以编译而keil会报错的情况。所以不建议新手直接上马。</p>
+<h4 id="换编译器"><a href="#换编译器" class="headerlink" title="换编译器"></a>换编译器</h4><p>在使用HAL库的情况下使用AC6编译器对比AC5可以体验飞一般的感觉。</p>
 
       
     </div>
@@ -524,7 +525,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文旨在介绍一些进行更高效率的开发的方法"><span class="nav-number">1.</span> <span class="nav-text">本文旨在介绍一些进行更高效率的开发的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#众所周知keil是我们最熟悉的IDE但是它也有一些问题"><span class="nav-number">1.1.</span> <span class="nav-text">众所周知keil是我们最熟悉的IDE但是它也有一些问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码补全解决方法"><span class="nav-number">2.</span> <span class="nav-text">代码补全解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#整个工程导入"><span class="nav-number">2.1.</span> <span class="nav-text">整个工程导入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用外部编辑器代替keil编辑器"><span class="nav-number">2.2.</span> <span class="nav-text">用外部编辑器代替keil编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用VS直接取代keil"><span class="nav-number">2.3.</span> <span class="nav-text">用VS直接取代keil</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文旨在介绍一些进行更高效率的开发的方法"><span class="nav-number">1.</span> <span class="nav-text">本文旨在介绍一些进行更高效率的开发的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#众所周知keil是我们最熟悉的IDE但是它也有一些问题"><span class="nav-number">1.1.</span> <span class="nav-text">众所周知keil是我们最熟悉的IDE但是它也有一些问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码补全解决方法"><span class="nav-number">2.</span> <span class="nav-text">代码补全解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#整个工程导入"><span class="nav-number">2.1.</span> <span class="nav-text">整个工程导入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用外部编辑器代替keil编辑器"><span class="nav-number">2.2.</span> <span class="nav-text">用外部编辑器代替keil编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用VS直接取代keil"><span class="nav-number">2.3.</span> <span class="nav-text">用VS直接取代keil</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#换编译器"><span class="nav-number">2.4.</span> <span class="nav-text">换编译器</span></a></li></ol></li></ol></div>
             
 
           </div>
